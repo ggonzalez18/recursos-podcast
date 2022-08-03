@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #2f48a7;
+    --color-secondary: #0b2f63;
+    --color-tertiary: #2fc5df;
+    --color-action: #ffbc2f;
+    --color-white: #fff;
+    --bg-cta-mobile: #f1f5fd;
+    --bg-pilar-mobile: #c7d6f9;
+    --border-bottom: rgba(47, 72, 167, .13);
+    --font-color-primary: #354256;
+    --font-family-body: 'Lato', sans-serif;
+    --font-family-title: 'Source Sans Pro', sans-serif;
+    --bg-gradient-1: #dae5fa;
+    --bg-gradient-2: #f6f9fe;
+    --shadow-1: 0 5px 26px rgb(53 66 86 / 16%);
+    --shadow-submenu: 0 4px 6px 0 rgb(0 0 0 / 16%);
+    --radius-shadow-box: .938rem;
+    --radius-btn: 30px;
+  
+    --gradient-1: linear-gradient(180deg, var(--bg-gradient-1) 0, var(--bg-gradient-2));
+    --gradient-2: linear-gradient(180deg, var(--bg-gradient-1) 0, var(--bg-gradient-2) 50%);
+    --gradient-3: linear-gradient(180deg, var(--color-white) 45%, var(--bg-gradient-1) 80%);
+  
+  }

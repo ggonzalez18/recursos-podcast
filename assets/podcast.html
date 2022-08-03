@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" media="all and (max-width: 767px)" href="/assets/css-grid/mobile.css">
+  <link rel="stylesheet" media="all and (min-width: 767px)" href="/assets/css-grid/tablet.css">
+  <link rel="stylesheet" media="all and (min-width: 1020px)" href="/assets/css-grid/desktop.css">
+  <link rel="stylesheet" href="/assets/css-grid/padding-margin.css">
+  <link rel="stylesheet" href="/assets/css-grid/main.css">
+  <link rel="stylesheet" href="/assets/css-proyect/banner.css">
+  <link rel="stylesheet" href="/assets/css-proyect/filter.css">
+  <link rel="stylesheet" href="/assets/css-proyect/card-podcast.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="banner"></header>
+  <main>
+    <section class="buk-pt-10 buk-pb-10 boxer">
+      <h2 class="buk-mb-5 txt-center">Podcast</h2>
+      <h3 class="buk-mb-3 v-desktop">Temas</h3>
+      <hr class="v-desktop">
+      <ul class="menu-category-mobile">
+        <li class="v-mobile">
+          <button class="menu-mobile__button ds-flex ai-center" id="btn-collapse" aria-controls="categoriesCollapse">
+            <span class="menu-mobile__text">Categorías</span>
+            <span class="arrow-down">
+              <i class="arrow-down__left"></i>
+              <i class="arrow-down__right"></i>
+            </span>
+          </button>
+        </li>
+        <li class="menu-dropdown" id="menu-options">
+          <ul class="buk-row-lg-2 ds-lg-flex">
+            <li>
+              <button class="btn-category" data-categories-target="#category-1">
+                Reclutamiento y seleccion de personal
+              </button>
+            </li>
+            <li>
+              <button class="btn-category" data-categories-target="#category-2">
+                Cultura y Bienestar laboral
+              </button>
+            </li>
+            <li>
+              <button class="btn-category" data-categories-target="#category-3">
+                Pago de remuneraciones
+              </button>
+            </li>
+            <li>
+              <button class="btn-category" data-categories-target="#category-4">
+                Buk (entrevistas y casos de éxito)
+              </button>
+            </li>
+            <li>
+              <button class="btn-category" >
+                Transformación digital
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <hr class="v-desktop">
+      <section class="buk-grid buk-mt-4">
+        <div class="swiper podcast-carousel buk-col" id="category-1" data-categories-content>
+          <div class="swiper-wrapper">
+            <!-- 1 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton + -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 1</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>¡Bukcast, el podcast de Buk! Escucha la primera temporada donde conversaremos los temas más contingentes sobre “Bienestar Organizacional”. Con este podrás tener las claves para tener colaboradores más felices en su lugar de trabajo. </p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png" alt=""></span>
+                </button>
+              </div>
+            </article>
+            <!-- 2 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 2</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. sequi nesciunt.</p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png"
+                      alt=""></span>
+                </button>
+              </div>
+            </article>
+            <!-- 3 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 3</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. sequi nesciunt.</p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png" alt=""></span>
+                </button>
+              </div>
+            </article>
+            <!-- 4 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 4</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. sequi nesciunt.</p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png"alt=""></span>
+                </button>
+              </div>
+            </article>
+            <!-- 5 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 5</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. sequi nesciunt.</p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png"
+                      alt=""></span>
+                </button>
+              </div>
+            </article>
+            <!-- 6 card de podcast -->
+            <article class="box-podcast swiper-slide">
+              <div class="box-podcast__info">
+                <img src="../assets/img/img-podcast.png" alt="">
+                <!-- bloque de titulo mas boton -->
+                <div class="box-podcast__title buk-grid">
+                  <div class="buk-col-lg-10 buk-col-md-10 buk-col-3">
+                    <h4>Beneficios de tener al colaborador en el centro 6</h4>
+                  </div>
+                  <div class="buk-col-lg-2 buk-col-md-2 buk-col-1 podcast-button__plus">
+                      <img src="../assets/img/icon-plus.png" alt="icono para ver más información">
+                  </div>
+                </div>
+                <!-- descripcion despues del click -->
+                <div class="box-podcast__description hidde">
+                  <div class="ds-flex jc-end">
+                    <img src="../assets/img/icon-close.png" alt="icono para ver más información" class="podcast-button__close">
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. sequi nesciunt.</p>
+                </div>
+              </div>
+              <!-- boton escuchar ahora de spotify -->
+              <div class="ds-flex jc-center ai-center">
+                <button class="btn-recursos buk-my-2">Escuchar ahora <span> <img src="../assets/img/Spotify_logo.png"
+                      alt=""></span>
+                </button>
+              </div>
+            </article>
+          </div>
+          <!-- paginacion -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+<!-- esto se eliminara despues-->
+        <div class="swiper podcast-carousel buk-col" id="category-2" data-categories-content>
+          <div class="swiper-wrapper">
+            <article class="swiper-slide" style="background-color: pink; height:200px ; width: 30%;">
+            </article>
+          </div>
+          <div class="swiper-pagination buk-mt-2"></div>
+        </div>
+        <div class="swiper podcast-carousel buk-col" id="category-3" data-categories-content>
+          <div class="swiper-wrapper">
+            <article class="swiper-slide" style="background-color: green; height:200px ; width: 30%;">
+            </article>
+          </div>
+        </div>
+        <div class="swiper podcast-carousel buk-col" id="category-4" data-categories-content>
+          <div class="swiper-wrapper">
+            <article class="swiper-slide" style="background-color: orange; height:200px ; width: 30%;">
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- seccion de correo -->
+    <section class=" buk-my-lg-6 bg-suscription">
+      <div class="buk-grid boxer box-suscription">
+        <div class="buk-col-lg-6 buk-col-md-6 buk-col box-suscription__text">
+          <h2>Sé el primero en conocer el contenido que Buk tiene para ti.</h2>
+          <p>¡Suscríbete!</p>
+        </div>
+        <div class="buk-col-lg-6 buk-col-md-6 buk-col box-suscription__form"> aquí va el form</div>
+      </div>
+    </section>
+
+  </main>
+  <script defer src="../assets/js/tabs.js"></script>
+  <script defer src="../assets/js/podcast.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
